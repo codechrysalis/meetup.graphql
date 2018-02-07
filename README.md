@@ -1,8 +1,10 @@
-# GraphQL Meetup
-  
+<img src="https://cdn-images-1.medium.com/max/1000/1*IvCDlfi3vQfgyKO1eFv4jA.png" alt="graphql" width="400">
+
+# Code Chrysalis GraphQL Meetup
+
 ## 1. Server
 
-Clone this repository to your computer. From the root directory, run `npm install` and `npm start`. Note: you will need to have `node` installed on your computer.
+Clone this repository to your computer. From the root directory, run `npm install` and `npm start`. Note: you will need to have [node](https://nodejs.org/en/) installed on your computer.
 
 Visit `http://localhost:4000/graphql` to test that the server is running. 
 
@@ -47,3 +49,12 @@ Here are some queries you can test:
 ## 4. Queries & Mutations
 
 - You can continue to test all of this using `localhost:4000/graphql`. But let's say you want to connect a frontend to this server. The only endpoint for your server is `/graphql`– if you are fetching a resource, you will need to POST your query to that endpoint (whether it is a query or a mutation). Suggestion: check out Apollo-Fetch or Apollo-Client.
+
+
+# About Code Chrysalis
+
+This meetup was hosted by [Code Chrysalis](https://www.codechrysalis.io), Japan's only advanced software engineering school focused on developing the next generation of tech leaders.
+
+- __IMMERSIVE__. Our 12 week program where we give you the skills to become a full stack software engineer with a Silicon Valley mindset.
+- __FOUNDATIONS__. Our part-time prep course for beginners who want to get started learning how to code.
+- __ENGLISH PREP__. Our part-time class where we teach conversational English in an interactive way.
