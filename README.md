@@ -2,7 +2,7 @@
   
 ## 1. Server
 
-Clone this repository to your computer. Then, from the root directory, run `npm install` and `npm start`.
+Clone this repository to your computer. From the root directory, run `npm install` and `npm start`. Note: you will need to have `node` installed on your computer.
 
 Visit `http://localhost:4000/graphql` to test that the server is running. 
 
