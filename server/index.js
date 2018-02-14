@@ -7,8 +7,8 @@ const data = require('./data/pokemon.js');
 // The schema should model the full data object available.
 const schema = buildSchema(`
   type Pokemon {
-    id: Int!
-    name: String
+    id: String
+    name: String!
   }
   type Query {
     pokemons: [Pokemon]
