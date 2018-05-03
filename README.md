@@ -44,9 +44,33 @@ Here are some queries you can test:
 
 - This is where you can add additional types of resolvers. Think about what other types of queries you are interested in and add them here!
 
-- This is also where you would add mutations (you would need to create a type called `Mutation` in your schema and list them there as well).
+## 4. Mutations
 
-## 4. Queries & Mutations
+- If you want to add a mutation, the structure is a little different. Instead of using the keyword `type`, use the keyword `input`. Additionally, you will need to create a type called `Mutation` inside your schema. See below for an example!
+
+```
+input MessageInput {
+  content: String
+  author: String
+}
+
+type Message {
+  id: ID!
+  content: String
+  author: String
+}
+
+type Query {
+  getMessage(id: ID!): Message
+}
+
+type Mutation {
+  createMessage(input: MessageInput): Message
+  updateMessage(id: ID!, input: MessageInput): Message
+}
+```
+
+## 5. Frontend
 
 - You can continue to test all of this using `localhost:4000/graphql`. But let's say you want to connect a frontend to this server. The only endpoint for your server is `/graphql`– if you are fetching a resource, you will need to POST your query to that endpoint (whether it is a query or a mutation). Suggestion: check out Apollo-Fetch or Apollo-Client.
 

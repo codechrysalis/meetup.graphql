@@ -11,17 +11,17 @@ const schema = buildSchema(`
     name: String!
   }
   type Query {
-    pokemons: [Pokemon]
-    pokemon(name: String): Pokemon
+    getPokemons: [Pokemon]
+    getPokemon(name: String): Pokemon
   }
 `);
 
 // The root provides the resolver functions for each type of query or mutation.
 const root = {
-  pokemons: () => {
+  getPokemons: () => {
     return data;
   },
-  pokemon: (request) => {
+  getPokemon: (request) => {
     return data.find(pokemon => pokemon.name === request.name);
   }
 };
